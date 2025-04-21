@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity=""
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Apply zoom effect */
+.zoom {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.zoom:hover {
+  transform: scale(1.2); /* Zoom in by 20% */
+}
+
+            h1, h2, h3, h4, h5, h6, div, p {
+      font-family: "Varela Round", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    </style>
+    <!-- link  -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfolios</title>
+</head>
+
+<body>
+
+    <!-- ! header  -->
+    <header>
+        <nav class="fixed bg-gray-400 top-0 left-0 w-full my-1 shadow-lg z-50">
+            <div class="container mx-auto flex items-center justify-between p-4">
+
+                <!-- Brand -->
+                <a class="text-3xl font-bold" href="#page-top">
+                    <div class="divider ">
+                        <label class="swap swap-flip">
+                            <input type="checkbox" />
+                            <div class="swap-off">Prabhleen Kaur</div>
+                            <div class="swap-on text-center"></div>
+                        </label>
+                    </div>
+                </a>
+
+                <!-- Toggler for Mobile -->
+                <button class=" text-xl md:hidden" type="button" id="navbarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex text-black flex-grow items-center justify-center space-x-4">
+                    <a class=" hover:text-gray-300" href="#about">About</a>
+                    <a class=" hover:text-gray-300" href="#details">Details</a>
+                    <a class=" hover:text-gray-300" href="#certifications">Certifications</a>
+                    <a class=" hover:text-gray-300 flex items-center" href="#contact">
+                        <i class="fa-solid fa-phone fa-xs mr-2"></i> Contact
+                    </a>
+                    <a class=" hover:text-gray-300 flex items-center" href="uploads/Prabh CV.pdf" download>
+                        <button class="btn bg-lime-200 text-black hover:bg-lime-300 py-2 px-4 rounded-lg">Download CV <i
+                                class="fa-solid fa-arrow-down ml-2"></i></button>
+                    </a>
+                </div>
+
+                <!-- Search Form -->
+                <form class="hidden md:flex items-center space-x-2">
+                    <input class="form-input border border-gray-300 rounded-md py-1 px-3 text-black" type="text"
+                        placeholder="Search.....">
+                    <button class="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Collapsible Menu for Mobile -->
+            <div class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-10 hidden" id="navbarCollapse">
+                <div class="flex flex-col items-center justify-between p-4 space-y-4">
+                    <!-- Close Button -->
+                    <button class="self-end text-white text-xl" id="navbarClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <!-- Mobile Menu Links -->
+                    <div class="flex flex-col items-center space-y-5">
+                        <a class="text-white text-xl hover:text-gray-300" href="#portfolio">Portfolio</a>
+                        <a class="text-white text-xl hover:text-gray-300" href="#about">About</a>
+                        <a class="text-white text-xl hover:text-gray-300" href="#details">Details</a>
+                        <a class="text-white text-xl hover:text-gray-300" href="#certifications">Certifications</a>
+                        <a class="text-white text-xl hover:text-gray-300 flex items-center" href="#contact">
+                            <i class="fa-solid fa-phone fa-xs mr-2"></i> Contact
+                        </a>
+                    </div>
+
+                    <!-- Mobile Search Form -->
+                    <!-- <form class="flex flex-col items-center space-y-2">
+                        <input class="form-input border border-gray-300 rounded-md py-1 px-3 text-black" type="text"
+                            placeholder="Search.....">
+                        <button class="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form> -->
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ! header ends -->
+
+
+    <!-- Content Below Navbar -->
+    <!-- empty container  -->
+    <div class="pt-20"> <!-- Adjust the padding-top value as needed -->
+        <!-- Your page content goes here -->
+    </div>
+
+
+    <!--! main body  -->
+    <main>
+
+        <!-- *row 1  -->
+        <!--* Hero Section -->
+        <section>
+            <div class="min-h-[860px] bg-pink-200 overflow-hidden">
+                <div class="px-4 sm:px-10">
+                    <div class="my-5 gap-4 grid sm:grid-cols-12 grid-cols-1">
+
+                        <!--! Left Column -->
+                        <div
+                            class="min-h-[860px] rounded-lg shadow-lg bg-amber-400 sm:col-span-4 p-4 flex flex-col overflow-y-auto">
+                            
+                            <!--* Profile Picture -->
+
+                            <div class="flex justify-center items-center my-4 zoom">
+                                <label class="swap swap-flip">
+                                    <input type="checkbox" />
+                                    <div class="swap-off avatar">
+                                        <div class="w-96 lg:w-96 rounded-full shadow-lg">
+                                            <img src="PicA.jpg" alt="Gagan Gadday" />
+                                        </div>
+                                    </div>
+                                    <div class="swap-on avatar">
+                                        <div class="w-96 lg:w-96 rounded-full shadow-lg">
+                                            <img src="PicB.jpg" alt="Gagan Gadday" />
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!--* ID Section -->
+                            <div class="mx-10 sm:mx-14 lg:mx-20 bg-opacity-50 bg-violet-400 p-5 rounded-lg flex-grow">
+                                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Prabhleen Kaur</h2>
+                                <p class="font-bold text-lg sm:text-xl lg:text-xl my-4">
+                                    Data scientist
+                                </p>
+                                <p class="text-lg sm:text-xl lg:text-2xl my-4">
+                                    Student
+                                </p>
+                                <p class="text-sm sm:text-base lg:text-lg mt-4">
+                                    Lovely Professionl University, <br>
+                                    Bachlor of Technology in Data Science and Machine Learning
+                                </p>
+                            </div>
+
+                            <!--* Social Media Links -->
+                            <div class="mx-10 sm:mx-14 lg:mx-20 mt-5 bg-red-200 p-5 rounded-lg text-center">
+                                <div class="flex justify-center space-x-4">
+                                    <a href="https://github.com/Prabhleen04"><i
+                                            class="fa-brands fa-github fa-shake text-3xl sm:text-4xl lg:text-5xl"></i></a>
+                                    <a href="https://www.linkedin.com/in/prabhleen-kaur-8782bb253/"><i
+                                            class="fa-brands fa-linkedin fa-bounce text-3xl sm:text-4xl lg:text-5xl text-blue-800"></i></a>
+                                    <a href="mailto:mahiprabhleenkaur@gmail.com"><i
+                                            class="fa-brands fa-google fa-beat-fade text-3xl sm:text-4xl lg:text-5xl text-lime-400"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--! Right Column -->
+                        <div
+                            class="min-h-[720px] rounded-lg shadow-lg bg-violet-400 sm:col-span-8 p-4 flex flex-col justify-center items-center overflow-y-auto">
+                            <div class="text-left mx-4 sm:mx-8 lg:mx-16 my-10">
+                                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                                    About
+                                </h3>
+                                <p class="text-lg sm:text-2xl lg:text-3xl text-justify leading-relaxed">
+                                    Hello, I'm <span class="font-bold">Prabhleen Kaur</span>
+                                    Currently pursuing Bachlor of technology in Data Science and Machine Learning from Lovely Professional University (LPU),
+                                    Punjab. <br><br>
+                                    I am a highly motivated B.Tech Computer Science student with a strong foundation in web development, data analysis, and digital marketing. <br>
+                                    My strengths lie in time management, discipline, and problem-solving, which I apply effectively in both technical and marketing projects. I aspire to build a career as a Digital Marketing Professional with a solid technical background, combining analytics with innovation to drive results and engagement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--* Hero Section End -->
+
+
+
+        <!-- divider  -->
+        <div class="divider my-20 md:my-20">
+            <label class="swap swap-flip text-6xl">
+                <input type="checkbox" />
+                <div class="swap-on"></div>
+                <div class="swap-off">💀</div>
+            </label>
+        </div>
+        <!-- divider  -->
+
+
+        <!--* row 2 -->
+        <section>
+            <div class="p-2 text-gray-900" id="details">
+                <div class="flex flex-wrap md:h-full p-5 bg-white">
+                    <!-- Details Section -->
+                    <div class="w-full md:w-2/3 p-2 flex">
+                        <div class="bg-violet-200 p-5 shadow-lg rounded-lg flex-grow flex flex-col">
+                            <h1 class="text-3xl font-bold mb-5">
+                                Details
+                            </h1>
+                            <p class="text-lg leading-relaxed flex-grow">
+Dedicated Data Science and Machine Learning Enthusiast from Punjab.<br><br>
+
+Over 3 years of experience working with HTML, CSS, Python and Data visualization.<br><br>
+
+Strong ambition to become a full-stack developer, with an emphasis on secure and visually impactful web experiences.<br><br>
+
+Always learning and evolving in the world of web development.<br><br>
+
+Driven by Growth and Determination.<br><br>
+
+Believes that progress is more important than perfection.<br><br>
+
+Approaches every task and project with a hardworking, positive mindset.<br><br>
+
+Every challenge is a chance to learn, grow, and improve.<br><br>
+
+
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="w-full md:w-1/3 p-2 flex">
+                        <div class="bg-violet-200 p-5 shadow-lg rounded-lg flex-grow flex flex-col justify-between">
+                            <h1 class="text-3xl font-bold mb-5">
+                                Skills <i class="fa fa-ghost fa-flip"></i>
+                            </h1>
+
+                            <div class="space-y-4">
+                                <!-- Technical Skills -->
+                                <div class="chat chat-start">
+                                    <div class="chat-bubble chat-bubble-primary font-bold text-lg">
+                                        Technical Skills...?
+                                    </div>
+                                </div>
+                                <div class="chat chat-end">
+                                    <div class="chat-bubble chat-bubble-primary text-lg">
+                                        HTML, CSS, Python, C
+    
+                            
+                                        <br>
+                                        JavaScript, MySQL
+                                        <br>
+                                        Python, OOP, DSA
+                                    </div>
+                                </div>
+
+                                <!-- Soft Skills -->
+                                <div class="chat chat-start">
+                                    <div class="chat-bubble chat-bubble-secondary font-bold text-lg">
+                                        Soft Skills...?
+                                    </div>
+                                </div>
+                                <div class="chat chat-end">
+                                    <div class="chat-bubble chat-bubble-secondary text-lg"></div>
+                                        Time Management,
+                                        Adaptibility,
+                                        Good Listener, 
+                                        Creative Thinking.
+                                        <br>
+                                        
+                                    </div>
+                                </div>
+
+                                <!-- Languages -->
+                                <div class="chat chat-start">
+                                    <div class="chat-bubble chat-bubble-accent font-bold text-lg">
+                                        Languages...?
+                                    </div>
+                                </div>
+                                <div class="chat chat-end">
+                                    <div class="chat-bubble chat-bubble-accent text-lg">
+                                        English, Punjabi, Hindi
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- * row 3  -->
+        <div class="mx-10 my-10">
+            <div class="my-4 gap-4 grid sm:grid-cols-12 grid-cols-1">
+
+                <!-- Certifications - 8/12 -->
+                <div class="min-h-[100px] rounded-lg shadow-lg bg-violet-400 sm:col-span-8">
+
+                    <div class="text-center">
+                        <h3 class="text-4xl font-bold">Certificates</h3>
+                        <br><br>
+                    </div>
+                    <div class="overflow-x-auto shadow-lg rounded-lg">
+                        <table class="min-w-full text-center bg-purple-50 rounded-lg">
+                            <thead class="bg-purple-700 text-white text-lg">
+                                <tr>
+                                    <th scope="col" class="py-3 px-4">Certificates</th>
+                                    <th scope="col" class="py-3 px-4">Platform</th>
+                                    <th scope="col" class="py-3 px-4">Duration</th>
+                                    <th scope="col" class="py-3 px-4">Download</th>
+                                </tr>
+                            </thead> 
+                            <tbody class="text-gray-800">
+                                <tr class="hover:bg-purple-100">
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200"> Data Structures and Algorithms </td>
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">GeeksforGeeks</td>
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">61 Hours</td>
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">
+                                        <a href="uploads/Online Certificates/Coursera/GenAI/Data Structures and Algorithms.jpg"
+                                            download>
+                                            <button class="btn bg-purple-700 text-white hover:bg-purple-600">
+                                                Download
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                
+                               
+                                
+                                <tr class="hover:bg-purple-100">
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">Genai For Everyone
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">Coursera</td>
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">8 Hours</td>
+                                    <td class="py-4 px-6 bg-purple-50 border-b border-gray-200">
+                                        <a href="uploads/Online Certificates/Coursera/GenAI/Learn to code with AI.pdf" download>
+                                            <button class="btn bg-purple-700 text-white hover:bg-purple-600">
+                                                Download
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-purple-100">
+                                    <td class="py-4 px-6 bg-purple-100 border-b border-gray-200">ChatGPT Advanced Data Analysis</td>
+                                    <td class="py-4 px-6 bg-purple-100 border-b border-gray-200">coursera</td>
+                                    <td class="py-4 px-6 bg-purple-100 border-b border-gray-200">30 Hours</td>
+                                    <td class="py-4 px-6 bg-purple-100 border-b border-gray-200">
+                                        <a href="uploads/Online Certificates/Coursera/GenAI/GenAI for Everyone.pdf" download>
+                                            <button class="btn bg-purple-700 text-white hover:bg-purple-600">
+                                                Download
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- Educational Qualification - 4/12 -->
+                <div class="min-h-[100px] rounded-lg shadow-lg bg-amber-400 sm:col-span-4">
+
+                    <!-- * edu table  -->
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold">Educational Qualification</h3>
+                        <br><br>
+                    </div>
+                    <div class="overflow-x-auto shadow-sm rounded-lg bg-violet-200">
+                        <table class="min-w-full text-center bg-violet-300 rounded-lg">
+                            <thead class="bg-violet-500 text-white">
+                                <tr>
+                                    <th scope="col" class="py-3 px-5">Degree</th>
+                                    <th scope="col" class="py-3 px-5">Year</th>
+                                    <th scope="col" class="py-3 px-5">Subject</th>
+                                    <th scope="col" class="py-3 px-5">Institute</th>
+                                    <th scope="col" class="py-3 px-5">GPA</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-violet-100">
+                                <tr>
+                                    <td class="py-3 px-5">10th</td>
+                                    <td class="py-3 px-5">2020</td>
+                                    <td class="py-3 px-5">PCM</td>
+                                    <td class="py-3 px-5">NASSS</td>
+                                    <td class="py-3 px-5">90.6%</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-5">12th</td>
+                                    <td class="py-3 px-5">2022</td>
+                                    <td class="py-3 px-5">PCM</td>
+                                    <td class="py-3 px-5">NASSS</td>
+                                    <td class="py-3 px-5">95.6%</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-5">B.Tech</td>
+                                    <td class="py-3 px-5">2026</td>
+                                    <td class="py-3 px-5">B.Tech (CSE)</td>
+                                    <td class="py-3 px-5">LPU</td>
+                                    <td class="py-3 px-5">TBA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- * edu table end  -->
+
+                    <!-- Projects - 4/12 -->
+                    <div class="overflow-x-auto shadow-lg rounded-lg mt-14">
+                        <table class="min-w-full text-center bg-gray-100 rounded-lg">
+                            <thead class="bg-gray-700 text-white text-lg">
+                                <tr>
+                                    <th scope="col" class="py-3 px-4">Project</th>
+                                    <th scope="col" class="py-3 px-4">Links</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-800">
+                                <tr class="hover:bg-gray-200">
+                                    <td class="py-4 px-6 bg-gray-50 border-b border-gray-200">Car Rental Management System</td>
+                                    <td class="py-4 px-6 bg-gray-50 border-b border-gray-200">
+                                        <a href="https://github.com/Prabhleen04/K22UG_Rental_Car_Management_System1_12206090"
+                                            target="_blank">
+                                            <button class="btn bg-blue-500 text-white hover:bg-blue-400">
+                                                View
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr class="hover:bg-gray-200">
+                                    <td class="py-4 px-6 bg-gray-100 border-b border-gray-200">Flipcard Data Analytise</td>
+                                    <td class="py-4 px-6 bg-gray-100 border-b border-gray-200">
+                                        <a href=" " target="_blank">
+                                            <button class="btn bg-blue-500 text-white hover:bg-blue-400">
+                                                View
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <!--! main body ends -->
+
+    <!-- ! github stats  -->
+
+    <!-- ! github stats ends  -->
+
+
+    <!-- ! footer  -->
+    <footer class="bg-gray-800 text-white my-2 py-8">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap justify-between">
+                <!-- My YouTube -->
+                <div class="w-full md:w-1/3 text-center mb-6 md:mb-0">
+                    <h4 class="text-3xl my-5 font-semibold mb-4">My YouTube</h4>
+                    <a href="https://www.youtube.com/@jaisanatann"
+                        class="text-red-600 hover:text-red-500 transition-colors">
+                        <i class="fa-brands fa-youtube fa-beat fa-2xl"></i>
+                    </a>
+                </div>
+
+                <!-- Around the Web -->
+                <div class="w-full md:w-1/3 text-center mb-6 md:mb-0">
+                    <h4 class="text-3xl my-5 font-semibold mb-4 text-uppercase">Around the Web</h4>
+                    <div class="flex justify-center space-x-4">
+                        <a href="mailto:mahiprabhleenkaur@gmail.com" class="text-white hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-google fa-2x"></i>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/prabhleen-kaur-8782bb253/"
+                            class="text-white hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/Prabhleen04"
+                            class="text-white hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hobbies -->
+                
+            </div>
+    </footer>
+    <!-- ! footer ends  -->
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
